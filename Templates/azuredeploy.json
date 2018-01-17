@@ -232,27 +232,6 @@
             ]
         },
         "dependsOn": []
-    },
-    {
-        "type": "Microsoft.Compute/virtualMachines/extensions",
-        "name": "[concat(parameters('vmName'),'/WinRMCustomScriptExtension')]",
-        "apiVersion": "2015-05-01-preview",
-        "location": "[resourceGroup().location]",
-        "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
-        ],
-        "properties": {
-          "publisher": "Microsoft.Compute",
-          "type": "CustomScriptExtension",
-          "typeHandlerVersion": "1.4",
-          "settings": {
-            "fileUris": [
-              "https://raw.githubusercontent.com/jakedenyer-s24/PSPrivateGalleryWalkthrough/master/Scripts/Configure-WinRM.ps1",
-              "https://raw.githubusercontent.com/jakedenyer-s24/PSPrivateGalleryWalkthrough/master/Scripts/makecert.exe"
-            ],
-            "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -file ConfigureWinRM.ps1 ',variables('hostDNSNameScriptArgument'))]"
-          }
-        }
-      }
+    }
     ]
   }
