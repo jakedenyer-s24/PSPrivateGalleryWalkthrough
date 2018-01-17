@@ -11,13 +11,13 @@
             GalleryAdminCredFile        = 'C:\PSPG\Configuration\GalleryAdminCredFile.clixml'
             GallerySourcePath           = 'C:\Program Files\WindowsPowerShell\Modules\PSGallery\GalleryContent\'
 
-            WebsiteName                 = 'Default Web Site'
-            WebsitePath                 = 'C:\PSPrivateGallery'
-            AppPoolName                 = 'DefaultAppPool'
+            WebsiteName                 = 'smigrate-psgallery'
+            WebsitePath                 = 'C:\smigrate-psgallery'
+            AppPoolName                 = 'smigratepsgallery'
             WebsitePort                 = 80
 
-            SqlInstanceName             = 'PSPrivateGallery'
-            SqlDatabaseName             = 'PSPrivateGallery'
+            SqlInstanceName             = 'SQLEXPRESS'
+            SqlDatabaseName             = 'smigrate-psgallery'
         }
     )
 }
