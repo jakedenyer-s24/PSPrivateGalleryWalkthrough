@@ -164,8 +164,7 @@
             "winRM": {
               "listeners": [
                 {
-                  "protocol": "https",
-                  "certificateUrl": "https://smigrate.vault.azure.net/secrets/smigrate-psgallery-winrm/b3668257ec484eb7a00807c237e2210e"
+                  "protocol": "http",
                 }
               ]
             },
