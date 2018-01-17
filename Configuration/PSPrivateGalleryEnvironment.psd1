@@ -16,7 +16,7 @@
             AppPoolName                 = 'smigratepsgallery'
             WebsitePort                 = 80
 
-            SqlInstanceName             = 'SQLEXPRESS'
+            SqlInstanceName             = 'PSGallery'
             SqlDatabaseName             = 'smigrate-psgallery'
         }
     )
