@@ -24,7 +24,7 @@
       "value": "vaultId"
     },
     "certificateUrl": {
-      "value": "vaultId"
+      "value": "url"
     }
   }
 }
