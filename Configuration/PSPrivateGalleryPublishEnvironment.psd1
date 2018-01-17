@@ -14,7 +14,7 @@
             EmailAddress                = 'First.Last@Domain.com'
             ApiKey                      = 'Guid'
 
-            PrivateGalleryName          = 'PSPrivateGallery'
+            PrivateGalleryName          = 'sdiscover'
             PrivateGalleryLocation      = 'http://localhost:80'
 
             SourceGalleryName          = 'PSGallery'
