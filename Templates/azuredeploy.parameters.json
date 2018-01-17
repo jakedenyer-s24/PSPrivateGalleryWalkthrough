@@ -19,12 +19,6 @@
     },
     "vmName": {
       "value": "ComputerName"
-    },
-    "vaultResourceId": {
-      "value": "vaultId"
-    },
-    "certificateUrl": {
-      "value": "url"
     }
   }
 }
