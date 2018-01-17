@@ -62,13 +62,13 @@
   },
   "variables": {
     "addressPrefix": "10.0.0.0/16",
-    "subnet1Name": "PSGallery",
+    "subnet1Name": "smigrate-psgallery",
     "subnet1Prefix": "10.0.0.0/24",
     "vmStorageAccountContainerName": "vhds",
     "publicIPAddressName": "[concat(parameters('vmName'),'-IP')]",
     "publicIPAddressType": "Dynamic",
     "storageAccountType": "Standard_LRS",
-    "virtualNetworkName": "PSGallery",
+    "virtualNetworkName": "smigrate-psgallery",
     "nicName": "[concat(parameters('vmName'),'-NIC')]",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnet1Name'))]"
@@ -164,7 +164,7 @@
             "winRM": {
               "listeners": [
                 {
-                  "protocol": "http"
+                  "protocol": "https"
                 }
               ]
             },
@@ -223,11 +223,11 @@
                   }
               },
               {
-                  "name": "allow-http-inbound",
+                  "name": "allow-https-inbound",
                   "properties": {
                       "protocol": "*",
                       "sourcePortRange": "*",
-                      "destinationPortRange": "80",
+                      "destinationPortRange": "443",
                       "sourceAddressPrefix": "*",
                       "destinationAddressPrefix": "*",
                       "access": "Allow",
