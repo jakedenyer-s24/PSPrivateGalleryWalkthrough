@@ -239,8 +239,7 @@
         "apiVersion": "2015-05-01-preview",
         "location": "[resourceGroup().location]",
         "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName'))]",
-          "[concat('Microsoft.Network/networkSecurityGroups', parameters('vmName'),'-netsec')]",
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
         ],
         "properties": {
           "publisher": "Microsoft.Compute",
