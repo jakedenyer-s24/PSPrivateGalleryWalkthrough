@@ -160,19 +160,6 @@
             "computerName": "[parameters('vmName')]",
             "adminUsername": "[parameters('adminUsername')]",
             "adminPassword": "[parameters('adminPassword')]",
-            "secrets": [
-                {
-                    "sourceVault": {
-                    "id": "[parameters('vaultResourceId')]"
-                    },
-                    "vaultCertificates": [
-                    {
-                        "certificateUrl": "[parameters('certificateUrl')]",
-                        "certificateStore": "smigrate-psgallery"
-                    }
-                    ]
-                }
-            ],
             "windowsConfiguration": {
               "provisionVMAgent": true,
               "enableAutomaticUpdates": true
