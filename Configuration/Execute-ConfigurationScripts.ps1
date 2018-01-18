@@ -4,7 +4,7 @@ param (
     [string]$UserPass,
     [string]$ApiKey = (New-Guid | Select-Object -ExpandProperty Guid),
     [string]$EmailAddress = 'First.Last@Domain.com',
-    [string]$PrivateGalleryName = 'sdiscover'
+    [string]$PrivateGalleryName = 'PSPrivateGallery'
 )
 
 Push-Location $PSScriptRoot
