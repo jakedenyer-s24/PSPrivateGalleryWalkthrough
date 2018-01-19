@@ -1,4 +1,4 @@
-﻿@{
+@{
     AllNodes = @(
         @{
             NodeName                    = 'localhost'
@@ -11,13 +11,13 @@
             GalleryAdminCredFile        = 'C:\PSPG\Configuration\GalleryAdminCredFile.clixml'
             GallerySourcePath           = 'C:\Program Files\WindowsPowerShell\Modules\PSGallery\GalleryContent\'
 
-            WebsiteName                 = 'smigrate-psgallery'
-            WebsitePath                 = 'C:\smigrate-psgallery'
-            AppPoolName                 = 'smigratepsgallery'
+            WebsiteName                 = 'Default Web Site'
+            WebsitePath                 = 'C:\PSPrivateGallery'
+            AppPoolName                 = 'DefaultAppPool'
             WebsitePort                 = 80
 
-            SqlInstanceName             = 'PSGallery'
-            SqlDatabaseName             = 'smigrate-psgallery'
+            SqlInstanceName             = 'PSPrivateGallery'
+            SqlDatabaseName             = 'PSPrivateGallery'
         }
     )
 }
